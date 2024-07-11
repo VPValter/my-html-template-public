@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My HTML Template</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/config.css" />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <!-- /* https://icons.getbootstrap.com/#icons */ -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+</head>
+
+<body>
+  <div class="fixed-header-compensation"></div>
+  <div class="body-overlay" onclick="closeMenus();"></div>
+  <header>
+    <div class="container">
+      <button type="button" class="btn header-btn" id="main-menu-open" aria-label="Main menu open"
+        onclick="openMainMenu();">
+        <i class="bi bi-list"></i>
+      </button>
+      <div class="logo-zone">
+        <a href="#">
+          <img src="img/logoipsum-325.svg" alt="Logo" />
+        </a>
+      </div>
+      <button type="button" class="btn header-btn" id="search-open" aria-label="Open search"
+        onclick="openSearchMenu();">
+        <i class="bi bi-search"></i>
+        <!-- <span>Search</span> -->
+      </button>
+      <button type="button" class="btn header-btn" id="user-menu-open" aria-label="User and login menu"
+        onclick="openUserMenu();">
+        <i class="bi bi-person"></i>
+      </button>
+      <button type="button" class="btn header-btn" id="basket-menu-open" aria-label="Open shopping cart"
+        onclick="openBasketMenu();">
+        <i class="bi bi-cart2"></i>
+      </button>
+    </div>
+  </header>
+  <nav class="main-menu side-menu left">
+    <div class="container">
+      <button type="button" class="btn header-btn close-menu" aria-label="Close menu" onclick="closeMenus();">
+        <i class="bi bi-x"></i>
+      </button>
+      <ul>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Best Sellers</a></li>
+        <li><a href="#">Activewear</a></li>
+        <li><a href="#">Swim</a></li>
+        <li><a href="#">Accessories</a></li>
+        <li><a href="#">Sale</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="basket-menu side-menu right">
+    <div class="top">
+      <div class="header">
+        <span class="title">Cart</span>
+        <span class="products-count"> <span>0</span> products </span>
+      </div>
+      <button type="button" class="btn header-btn close-menu" aria-label="Close menu" onclick="closeMenus();">
+        <i class="bi bi-x"></i>
+      </button>
+    </div>
+    <div class="middle"></div>
+  </div>
+  <div class="user-menu side-menu right">
+    <button type="button" class="btn header-btn close-menu" aria-label="Close menu" onclick="closeMenus();">
+      <i class="bi bi-x"></i>
+    </button>
+    <div>
+      <p>User module goes here</p>
+    </div>
+  </div>
+  <div class="search-menu side-menu top">
+    <div class="container">
+      <button type="button" class="btn header-btn close-menu" aria-label="Close menu" onclick="closeMenus();">
+        <i class="bi bi-x"></i>
+      </button>
+      <div class="search-inner">
+        <input placeholder="Search" type="search" name="txtSearch" id="txtSearch" autocomplete="off" />
+      </div>
+    </div>
+  </div>
+  <section class="wide-top">
+    <div style="min-height: 300px; background-color: pink;">Wide section - top</div>
+  </section>
+  <div class="main-wrapper">
+    <aside class="left-zone">
+      <div style="min-height: 400px; background-color: aqua;">Aside content</div>
+    </aside>
+    <main class="right-zone">
+      <div style="min-height: 400px; background-color: lightskyblue;">Main content</div>
+    </main>
+  </div>
+  <section class="wide-bottom">
+    <div style="min-height: 360px; background-color: lightgoldenrodyellow;">
+      <span>Wide section - bottom</span>
+      <div class="container" style="min-height: 300px; background-color: lightgray; border: 2px dashed lightcoral;">
+        Container (contained width)</div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="footer-logo">
+        <img src="img/logoipsum-325-darkbg.svg" alt="Company logo" />
+      </div>
+      <div class="footer-info">
+        <a href="tel:+381 11 0000 000"><i class="bi bi-telephone-fill"></i>+381 11 0000 000</a>
+        <a href="#"><i class="bi bi-geo-alt"></i>Jurija Gagarina 100, Novi
+          Beograd</a>
+        <a href="mailto:maloprodaja@company.rs"><i class="bi bi-envelope"></i>maloprodaja@company.rs</a>
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li>
+            <a href="#">about us</a>
+          </li>
+          <li>
+            <a href="#">catalogue</a>
+          </li>
+          <li>
+            <a href="#">distributors</a>
+          </li>
+          <li>
+            <a href="#">blog</a>
+          </li>
+          <li>
+            <a href="#">gallery</a>
+          </li>
+          <li>
+            <a href="#">video gallery</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <a href="https://sr-rs.facebook.com/companyrs/" aria-label="Facebook page" target="_blank"><i
+            class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/companyrs/" aria-label="Instagram page" target="_blank"><i
+            class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/global.js"></script>
+</body>
+
+</html>
